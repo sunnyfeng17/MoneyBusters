@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function(e) {
    const emailInput = document.querySelector('[name=username]');
-   emailInput.addEventListener('blur', emailAddressValidator);
+  // emailInput.addEventListener('blur', emailAddressValidator);
    const passwordInput = document.querySelector('[name=password]');
-   passwordInput.addEventListener('blur', passwordValidator);
+  // passwordInput.addEventListener('blur', passwordValidator);
  });
 
 const emailAddressValidator = e => {
