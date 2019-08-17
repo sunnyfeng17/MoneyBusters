@@ -16,7 +16,8 @@ router.get('/login', function(req, res, next) {
 
 router.post('/login', function(req, res, next) {
   const {username, password} = req.body;
-  if(username === 'test' && password === 'test1') {
+  console.log(req.body)
+  if(username === "test" & password === "test1") {
     res.redirect('/main');
   } else {
     res.render('login', {title: 'Money Busters', error: 'Invalid Username or Password'})
@@ -24,7 +25,7 @@ router.post('/login', function(req, res, next) {
 });
 
 router.get('/main', function(req, res, next) {
-  res.render('main', { amount: 100 });
+  res.render('main', { amount: 100, days: 6 });
 });
 
 module.exports = router;
