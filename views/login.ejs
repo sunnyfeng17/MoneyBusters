@@ -6,6 +6,11 @@
   </head>
   <body>
     <h1>Login</h1>
-    <div><a href="/main">Main</a></div>
+    <form method="POST" action="/login">
+        <%= error %>
+    <div><label for="name"> Name:</label> <input name="name" id="name"></div>
+    <div><label for="password">Password:</label> <input name="password" type="password" id="password"></div>
+    <div><button>Login</button></div>
+</form>
   </body>
 </html>
