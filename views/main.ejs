@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1>Main</h1>
+    <p>You have <br> $<%= amount.toFixed(2) %> left to <br> spend for the <br> next <%= days.toFixed(0) %> days.</p>
+    <div class="navbar">
+      <a href="/details">Details</a>
+      <a href="/trends">Spending Trends</a>
+      <a href="/savings">Savings</a>
+      <a href="/connect">Connect</a>
+    </div>
   </body>
 </html>

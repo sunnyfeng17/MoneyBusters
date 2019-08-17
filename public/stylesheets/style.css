@@ -1,8 +1,31 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #EC5B56;
+  align-content: center;
+  text-align: center;
 }
 
 a {
-  color: #00B7FF;
+  font-size: 4vw;
+  background-color: white;
+  color: #EC5B56;
+  text-decoration: none;
+  padding: 1vw 1vw;
+}
+
+.navbar {
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+
+h1 {
+  font-size: 10vw;
+}
+
+p {
+  font-size: 10vw;
 }
