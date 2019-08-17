@@ -17,7 +17,7 @@ router.get('/login', function(req, res, next) {
 router.post('/login', function(req, res, next) {
   const {username, password} = req.body;
   console.log(req.body)
-  if(username === "test" & password === "test1") {
+  if(username === "test" && password === "test1") {
     res.redirect('/main');
   } else {
     res.render('login', {title: 'Money Busters', error: 'Invalid Username or Password'})
