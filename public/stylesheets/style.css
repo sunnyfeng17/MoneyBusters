@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800&display=swap');
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #EC5B56;
   align-content: center;
   text-align: center;
@@ -11,6 +12,39 @@ a {
   color: #EC5B56;
   text-decoration: none;
   padding: 1vw 1vw;
+  font: 1em  "Nunito Sans", "Helvetica", sans-serif;;
+  background-color:#EC5B56;
+  color:#F8DD6C;
+  margin: 10%;
+  margin-top: 40%;
+
+}
+
+h1{
+  font-size: 5em;
+  font-family: "Nunito Sans", "Helvetica", sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 40%;
+}
+
+
+div.Button{
+  padding: 50px 100px;
+  display: block;
+  background-color: white;
+  color: #EC5B56;
+  margin: 10% 15%;
+  box-shadow: 0.1em 1em  #707070 0.5;
+  
+}
+div.Button a{
+  color: #EC5B56;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar {
