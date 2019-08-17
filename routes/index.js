@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var budgetDetails = require('../models/budget-details')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -26,6 +27,10 @@ router.post('/login', function(req, res, next) {
 
 router.get('/main', function(req, res, next) {
   res.render('main', { amount: 100, days: 6 });
+});
+
+router.get('/details', function(req, res, next) {
+  res.render('details', budgetDetails.createFakeData());
 });
 
 module.exports = router;

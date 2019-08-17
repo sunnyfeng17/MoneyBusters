@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Weekly  <br> Spending Details</h1>
+    <% for(var i = 0 ; i < expenses.length ; i++) { %>
+        <p>
+            <span><%- JSON.stringify(expenses[i].name).replace(/['"]+/g, '') %>:</span> <span>- $<%- JSON.stringify(expenses[i].amount).replace(/['"]+/g, '') %></span></td>
+        </p>
+    <% } %>
+    <p><span>Budget:</span> <span>+ $<%= budget %></span></p>
+    <nav class="fixed navbar">
+      <a href="/details">Details</a>
+      <a href="/trends">Spending Trends</a>
+      <a href="/savings">Savings</a>
+      <a href="/connect">Connect</a>
+    </nav>
+  </body>
+</html>
