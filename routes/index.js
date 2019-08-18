@@ -8,9 +8,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'MoneyBusters' });
 });
 
-router.get('/signup', function(req, res, next) {
-  res.render('signup', { title: 'MoneyBusters' });
-});
+// router.get('/signup', function(req, res, next) {
+//   res.render('signup', { title: 'MoneyBusters' });
+// });
 
 router.get('/login', function(req, res, next) {
   res.render('login', { title: 'MoneyBusters', error: '' });
