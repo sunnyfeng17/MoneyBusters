@@ -5,11 +5,12 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-     <a href="/main">&#x274C;</a>
+    <div class="Details">
+   <div class="back">  <a  href="/main">&#x274C;</a></div>
     <h1>Weekly  <br> Spending Details</h1>
     <% for(var i = 0 ; i < expenses.length ; i++) { %>
         <p>
-            <span><%- JSON.stringify(expenses[i].name).replace(/['"]+/g, '') %>:</span> <span>- $<%- JSON.stringify(expenses[i].amount).replace(/['"]+/g, '') %></span></td>
+            <span ><%- JSON.stringify(expenses[i].name).replace(/['"]+/g, '') %>:</span> <span>- $<%- JSON.stringify(expenses[i].amount).replace(/['"]+/g, '') %></span></td>
         </p>
     <% } %>
     <p><span>Budget:</span> <span>+ $<%= budget %></span></p>
@@ -19,5 +20,6 @@
       <a href="/savings">Savings</a>
       <a href="/budget">Budget</a>
     </nav>
+  </div>
   </body>
 </html>

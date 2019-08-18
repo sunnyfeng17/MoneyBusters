@@ -4,22 +4,31 @@ body {
   background-color: #EC5B56;
   align-content: center;
   text-align: center;
+  font-family:  "Nunito Sans", "Helvetica", sans-serif;
+  color:white;
+}
+div{
+  margin-top: 100px;
+
 }
 
 a {
-  font-size: 4vw;
+
   background-color: white;
   color: #EC5B56;
   text-decoration: none;
   padding: 1vw 1vw;
-  font: 1em  "Nunito Sans", "Helvetica", sans-serif;;
-  background-color:#EC5B56;
-  color:#F8DD6C;
+  font: 1em  "Nunito Sans", "Helvetica", sans-serif;
   margin: 10%;
   margin-top: 40%;
 
 }
-
+.start{
+  margin: 20%;
+  padding-top: 10%;
+  width:100%;
+  height: 80%;
+}
 h1{
   font-size: 5em;
   font-family: "Nunito Sans", "Helvetica", sans-serif;
@@ -27,17 +36,22 @@ h1{
   vertical-align: middle;
   text-align: center;
   margin-bottom: 40%;
+  color:white;
+}
+.yellowStyle{
+  color: #F8DD6C;
+  font-style: normal;
+
 }
 
 
 div.Button{
-  padding: 50px 100px;
   display: block;
   background-color: white;
   color: #EC5B56;
-  margin: 10% 15%;
+  padding: 50px 100px;
   box-shadow: 0.1em 1em  #707070 0.5;
-  
+  margin-left:20%;
 }
 div.Button a{
   color: #EC5B56;
@@ -49,9 +63,19 @@ div.Button a{
 
 .navbar {
   background-color: white;
-  height: 10vh;
+  height: 10%;
   width: 100%;
   overflow: hidden;
+ position: relative;
+ bottom:0;
+}
+
+.nav-item{
+  width: 20%;
+  display:inline-block;
+  line-height:0.1em;
+  font-size:3em;
+  text-align:center;
 }
 
 .fixed {
@@ -67,9 +91,111 @@ h1 {
 }
 
 p {
-  font-size: 10vw;
+  font-size: 2em;
+  line-height: 1em;
 }
 
 input {
   margin-bottom: 5em;
+}
+
+
+
+.footer{
+  display:inline-flex;
+  margin-top: 30vh;
+  margin-left: 15%;
+  margin-right: 25%;
+  width:100%;
+}
+
+.sign-in label {
+
+ font-size: 2em;
+  font-family: "Nunito Sans", "Helvetica", sans-serif;
+  color:white;
+  text-align:left;
+}
+
+.Login{
+  height: 100%;
+  
+}
+
+.Login button{
+  background-color:white;
+width:50%;
+margin-left:20%;
+margin-top: 20%;
+padding: 30px 50px;
+font-size: 2em;
+line-height: .5;
+}
+.Login button:hover{
+  background-color:white;
+  color: #EC5B56;
+}
+.form-item{
+  display:block;
+  margin-left: 20%;
+  color:grey;
+}
+
+.input-field{
+  border-color:#707070 !important;
+}
+.input-field:focus{
+  border-color:#EC5B56 ;
+
+}
+
+.label-field{
+  overflow: visible;
+  color:#707070 !important;
+}
+
+.demo-card-wide.mdl-card{
+  width:80%;
+margin:0 10%;
+padding-top: 10%;
+padding-bottom:10%;
+}
+
+.Main {
+  margin-top: 30%;
+margin-bottom:0;
+height:100%;
+
+}
+.Add-button{
+  width: 150px;
+  height:150px;
+  background-color:white !important;
+  float:right;
+  margin-right: 50px;
+  font-size: 3em;
+margin-top: 30%;
+}
+.Add-button i{
+  font-size:2em;
+ float:left;
+align-self:center;
+}
+.Add-button:hover{
+  color: #EC5B56;
+}
+.Main p{
+  font-size: 8em;
+  text-align:left;
+  margin-left: 10%;
+ 
+}
+.Main{
+vertical-align: center;
+
+}
+.back a{
+  float:right;
+  top:0;
+  
 }
