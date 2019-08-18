@@ -10,7 +10,7 @@ const submitBtnClicked = e => {
     budget.push(getValue('transport'));
     budget.push(getValue('groceries'));
     budget.push(getValue('phone'));
-    budget.push(getValue('allowance'));
+    // budget.push(getValue('allowance'));
     budget.push(getValue('income'));
     var budgetInput = document.getElementById("budget");
     console.log(budget);

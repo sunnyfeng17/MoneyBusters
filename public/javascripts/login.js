@@ -1,5 +1,3 @@
-
-
 const amountChanged = e => {
     const expense = e.currentTarget.dataset.name;
     const amount = e.currentTarget.value;

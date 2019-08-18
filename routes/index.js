@@ -32,6 +32,10 @@ router.get('/details', function(req, res, next) {
   res.render('details', budgetDetails.createFakeData());
 });
 
+router.get('/budget', function(req, res, next) {
+  res.render('budget', { title: 'Money Busters' });
+});
+
 router.get('/rent', function(req, res, next) {
   res.render('rent', { title: 'Money Busters' });
 });
@@ -48,9 +52,9 @@ router.get('/phone', function(req, res, next) {
   res.render('phone', { title: 'Money Busters' });
 });
 
-router.get('/allowance', function(req, res, next) {
-  res.render('allowance', { title: 'Money Busters' });
-});
+// router.get('/allowance', function(req, res, next) {
+//   res.render('allowance', { title: 'Money Busters' });
+// });
 
 router.get('/income', function(req, res, next) {
   res.render('income', { title: 'Money Busters' });
