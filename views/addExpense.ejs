@@ -6,12 +6,15 @@
   </head>
   <body>
     <a href="/main">&#x274C;</a>
-    <p><span>Budget:</span> <span>+ $<input value=<%= budget %>> </span></p>
-    <% for(var i = 0 ; i < expenses.length ; i++) { %>
-        <p>
-            <span><%- JSON.stringify(expenses[i].name).replace(/['"]+/g, '') %>:</span> <span>-$<input value=<%- JSON.stringify(expenses[i].amount).replace(/['"]+/g, '') %>></span></td>
-        </p>
-    <% } %>
+    <p>Type of Spending:</p>
+    <select>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </select>
+    <p>Amount Spent:</p>
+    <div><input name="spent" id="spent" type="number" value=0 min="0" data-name="spent" required></div>
     <nav class="fixed navbar">
       <a href="/details">Details</a>
       <a href="/trends">Spending Trends</a>
