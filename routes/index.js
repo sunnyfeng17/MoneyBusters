@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var budgetDetails = require('../models/budget-details')
+var categories = require('../test/categories');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -9,6 +10,10 @@ router.get('/', function(req, res, next) {
 
 router.get('/signup', function(req, res, next) {
   res.render('signup', { title: 'Money Busters' });
+});
+
+router.get('/categories', async function(req, res, next) {
+  res.render('test', {categories: await categories.get()});
 });
 
 router.get('/login', function(req, res, next) {
