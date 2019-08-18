@@ -17,6 +17,10 @@ router.get('/categories', async function(req, res, next) {
   res.render('test', {categories: await categories.get()});
 });
 
+router.get('/categories', async function(req, res, next) {
+  res.render('test', {categories: await categories.get()});
+});
+
 router.get('/login', function(req, res, next) {
   res.render('login', { title: 'MoneyBusters', error: '' });
 });
