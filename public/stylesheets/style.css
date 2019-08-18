@@ -67,11 +67,11 @@ div.Button a{
   width: 100%;
   overflow: hidden;
  position: relative;
- bottom:0;
 }
 
 .nav-item{
-  width: 20%;
+  padding-bottom: 50px;
+  width: 45%;
   display:inline-block;
   line-height:0.1em;
   font-size:3em;
