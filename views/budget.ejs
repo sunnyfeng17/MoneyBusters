@@ -6,10 +6,12 @@
   </head>
   <body>
     <a href="/main">&#x274C;</a>
-    <h1>Budget</h1>
-    
-    <p><span>Budget:</span> <span></span></p>
-    
+    <p><span>Budget:</span> <span>+ $<input value=<%= budget %>> </span></p>
+    <% for(var i = 0 ; i < expenses.length ; i++) { %>
+        <p>
+            <span><%- JSON.stringify(expenses[i].name).replace(/['"]+/g, '') %>:</span> <span>-$<input value=<%- JSON.stringify(expenses[i].amount).replace(/['"]+/g, '') %>></span></td>
+        </p>
+    <% } %>
     <nav class="fixed navbar">
       <a href="/details">Details</a>
       <a href="/trends">Spending Trends</a>

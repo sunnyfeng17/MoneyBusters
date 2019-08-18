@@ -1,31 +1,36 @@
 var express = require('express');
 var router = express.Router();
-var budgetDetails = require('../models/budget-details')
+var budgetDetails = require('../models/budget-details');
+var editBudget = require('../models/edit-budget');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Money Busters' });
+  res.render('index', { title: 'MoneyBusters' });
 });
 
 router.get('/signup', function(req, res, next) {
-  res.render('signup', { title: 'Money Busters' });
+  res.render('signup', { title: 'MoneyBusters' });
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Money Busters', error: '' });
+  res.render('login', { title: 'MoneyBusters', error: '' });
 });
 
 router.post('/login', function(req, res, next) {
   const {username, password} = req.body;
   if(username === "test@test.com" && password === "test1") {
-    res.redirect('/main');
+    res.redirect('/begin');
   } else {
-    res.render('login', {title: 'Money Busters', error: 'Invalid Username or Password'})
+    res.render('login', {title: 'MoneyBusters', error: 'Invalid Username or Password'})
   }
 });
 
+router.get('/begin', function(req, res, next) {
+  res.render('begin', { title: 'MoneyBusters', amount: 100, days: 6 });
+});
+
 router.get('/main', function(req, res, next) {
-  res.render('main', { title: 'Money Busters', amount: 100, days: 6 });
+  res.render('main', { title: 'MoneyBusters', amount: 100, days: 6 });
 });
 
 router.get('/details', function(req, res, next) {
@@ -33,23 +38,23 @@ router.get('/details', function(req, res, next) {
 });
 
 router.get('/budget', function(req, res, next) {
-  res.render('budget', { title: 'Money Busters' });
+  res.render('budget', editBudget.createFakeData());
 });
 
 router.get('/rent', function(req, res, next) {
-  res.render('rent', { title: 'Money Busters' });
+  res.render('rent', { title: 'MoneyBusters' });
 });
 
 router.get('/transport', function(req, res, next) {
-  res.render('transport', { title: 'Money Busters' });
+  res.render('transport', { title: 'MoneyBusters' });
 });
 
 router.get('/groceries', function(req, res, next) {
-  res.render('groceries', { title: 'Money Busters' });
+  res.render('groceries', { title: 'MoneyBusters' });
 });
 
 router.get('/phone', function(req, res, next) {
-  res.render('phone', { title: 'Money Busters' });
+  res.render('phone', { title: 'MoneyBusters' });
 });
 
 // router.get('/allowance', function(req, res, next) {
@@ -57,7 +62,7 @@ router.get('/phone', function(req, res, next) {
 // });
 
 router.get('/income', function(req, res, next) {
-  res.render('income', { title: 'Money Busters' });
+  res.render('income', { title: 'MoneyBusters' });
 });
 
 router.post('/income', function(req, res, next) {
